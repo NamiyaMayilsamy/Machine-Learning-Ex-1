@@ -1,15 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-
 df = pd.read_csv("C:/Users/namiy/Downloads/diabetes (1).csv")
-
 fig, ax = plt.subplots(1, 2, figsize=(12, 5))
-
 ax[0].hist(df['Glucose'], bins=20)
 ax[0].set_title("Glucose Distribution")
-
 ax[1].boxplot(df['Age'])
 ax[1].set_title("Age Distribution")
-
 plt.tight_layout()
 plt.show()
